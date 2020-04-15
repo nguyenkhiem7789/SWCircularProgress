@@ -1,0 +1,6 @@
+framework module Pods_SWCircularProgress_Example {
+  umbrella header "Pods-SWCircularProgress_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
