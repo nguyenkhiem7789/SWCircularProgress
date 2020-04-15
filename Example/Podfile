@@ -6,6 +6,6 @@ target 'SWCircularProgress_Example' do
   target 'SWCircularProgress_Tests' do
     inherit! :search_paths
 
-    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+    pod 'SWCircularProgress', :path => '../'
   end
 end

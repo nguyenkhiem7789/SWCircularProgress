@@ -1,27 +1,16 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
   - SWCircularProgress (0.1.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase (~> 2.1.4)
   - SWCircularProgress (from `../`)
-
-SPEC REPOS:
-  trunk:
-    - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   SWCircularProgress:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SWCircularProgress: 7a03d659889eaf94d18e27d3cfdfe991923e1f6a
+  SWCircularProgress: 5997109d61b0319146ea905731e7bfb379ca738b
 
-PODFILE CHECKSUM: 04320a44f6646ee3c596b3d2f69a9112c7ca7946
+PODFILE CHECKSUM: 00885e1a828c9e386d61354ad4ce7f997be1882c
 
 COCOAPODS: 1.9.1

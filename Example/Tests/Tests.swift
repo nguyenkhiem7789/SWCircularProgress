@@ -1,5 +1,4 @@
 import XCTest
-import SWCircularProgress
 
 class Tests: XCTestCase {
     
