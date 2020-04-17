@@ -1,3 +1,4 @@
+<img src="https://user-images.githubusercontent.com/18132015/79543812-3a611480-80b8-11ea-8061-f450e35eb8b1.jpeg" width="300"/>
 # SWCircularProgress
 
 [![CI Status](https://img.shields.io/travis/nguyenkhiem7789@gmail.com/SWCircularProgress.svg?style=flat)](https://travis-ci.org/nguyenkhiem7789@gmail.com/SWCircularProgress)
