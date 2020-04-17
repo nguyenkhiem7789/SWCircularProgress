@@ -24,9 +24,8 @@ pod 'SWCircularProgress'
 
 In storyboard, you need create a CircularProgressView
 
-<image src = "
-https://user-images.githubusercontent.com/18132015/79543074-02a59d00-80b7-11ea-9181-320b94382465.png
-" width = "300"/>
+<img src = "
+https://user-images.githubusercontent.com/18132015/79543074-02a59d00-80b7-11ea-9181-320b94382465.png/>
 
 And in swift code, you cant set value for circle progress:
 
