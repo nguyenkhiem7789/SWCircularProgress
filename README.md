@@ -20,6 +20,15 @@ it, simply add the following line to your Podfile:
 pod 'SWCircularProgress'
 ```
 
+## How to use?
+
+In storyboard, you need create a CircularProgressView
+<img src="https://user-images.githubusercontent.com/18132015/79543074-02a59d00-80b7-11ea-9181-320b94382465.png"/>
+
+And in swift code, you cant set value for circle progress:
+
+        progressView.setValue(value: 0.7)
+
 ## Author
 
 nguyenkhiem7789@gmail.com, nguyenkhiem7789@gmail.com
