@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +18,66 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Sz-j4-Xht" customClass="CircularProgressView" customModule="SWCircularProgress">
+                                <rect key="frame" x="87.5" y="120" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="G12-Xd-W9a"/>
+                                    <constraint firstAttribute="height" constant="200" id="v8g-sf-k19"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                        <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBg-Ra-y57">
+                                <rect key="frame" x="16" y="611" width="343" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXi-VX-BDA">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                        <state key="normal" title="Change "/>
+                                        <connections>
+                                            <action selector="clickChangeButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Eda-lr-ipd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="VXi-VX-BDA" secondAttribute="trailing" id="IA1-qs-hFa"/>
+                                    <constraint firstAttribute="height" constant="40" id="II9-36-FF2"/>
+                                    <constraint firstAttribute="bottom" secondItem="VXi-VX-BDA" secondAttribute="bottom" id="O9x-eE-Wsf"/>
+                                    <constraint firstItem="VXi-VX-BDA" firstAttribute="top" secondItem="gBg-Ra-y57" secondAttribute="top" id="bYO-pt-6vY"/>
+                                    <constraint firstItem="VXi-VX-BDA" firstAttribute="leading" secondItem="gBg-Ra-y57" secondAttribute="leading" id="ccg-My-jOV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gBg-Ra-y57" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="3gZ-Ji-8aj"/>
+                            <constraint firstItem="gBg-Ra-y57" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="DJh-jX-5Zp"/>
+                            <constraint firstItem="0Sz-j4-Xht" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="120" id="XRE-pv-OmU"/>
+                            <constraint firstItem="0Sz-j4-Xht" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="gGE-oT-Nbp"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="gBg-Ra-y57" secondAttribute="bottom" constant="16" id="tIw-Yo-BYQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="progressView" destination="0Sz-j4-Xht" id="6RE-6C-M2j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>

@@ -5,7 +5,5 @@ target 'SWCircularProgress_Example' do
 
   target 'SWCircularProgress_Tests' do
     inherit! :search_paths
-
-    pod 'SWCircularProgress', :path => '../'
   end
 end

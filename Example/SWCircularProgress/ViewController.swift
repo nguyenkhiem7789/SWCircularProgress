@@ -7,17 +7,18 @@
 //
 
 import UIKit
+import SWCircularProgress
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var progressView: CircularProgressView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func clickChangeButton(_ sender: Any) {
+        progressView.setValue(value: 0.7)
     }
 
 }
