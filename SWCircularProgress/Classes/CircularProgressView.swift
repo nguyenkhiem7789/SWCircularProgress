@@ -90,6 +90,8 @@ public final class CircularProgressView: UIView {
         layer.addSublayer(progressLayer)
 
         textLayer.frame = CGRect(x: 0, y: layer.frame.height / 2 - fontSize / 2, width: layer.frame.width, height: fontSize)
+        textLayer.foregroundColor = textColor.cgColor
+        textLayer.fontSize = fontSize
         textLayer.isWrapped = true
         textLayer.alignmentMode = kCAAlignmentCenter
         textLayer.contentsScale = UIScreen.main.scale
